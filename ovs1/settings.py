@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-xnllsi8*jq=v%*#*b#4!37cy(*)8%xp@t7pb+-3w7_cz6)55ek
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -118,9 +118,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+# django_project/settings.py
+STATIC_URL = "/static/"
 
-STATICFILES_DIRS =[ BASE_DIR / 'static']
+STATICFILES_DIRS = [BASE_DIR / "static"] # new
 
 STATIC_ROOT = (BASE_DIR/ 'staticfiles')
 LOGIN_URL = '/login/'
